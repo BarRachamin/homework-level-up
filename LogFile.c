@@ -57,7 +57,7 @@ int main()
 	{
 		LogEvent("the file  open");
 		char snum[1000];
-		for (int i = 0; i <= num; i++)
+		for (int i = 1; i <= num; i++)
 		{
 			sprintf(snum, "%d\n", i);
 			fputs(snum,fn);
