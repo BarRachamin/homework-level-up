@@ -209,7 +209,7 @@ int exe6()
 			list->answer = 0;
 		}
 
-		sumval = sumval + list->answer;
+		sumval = sumval + list->val;
 		list++;
 	}
 
@@ -217,6 +217,7 @@ int exe6()
 	f = fopen("exe5_6.bin", "w");
 	fwrite(startlist, sizeof(struct Exe6), memoryNum, f);
 	fclose(f);
+	printf("sum of val:");
 	printf("%d", sumval);
 	free(startlist);
 
@@ -228,7 +229,6 @@ int main()
 {
 
 	exe6();
-
 
 	return 0;
 
